@@ -1,0 +1,27 @@
+BitInputStream.cpp:14:6: error: 'void BitInputStream::fill()' cannot be overloaded
+ void fill()
+      ^
+In file included from BitInputStream.cpp:1:0:
+BitInputStream.hpp:37:6: error: with 'void BitInputStream::fill()'
+ void fill();
+      ^
+BitInputStream.cpp:20:6: error: 'byte BitInputStream::bitVal(char, int)' cannot be overloaded
+ byte bitVal(char b, int n)
+      ^
+In file included from BitInputStream.cpp:1:0:
+BitInputStream.hpp:47:6: error: with 'byte BitInputStream::bitVal(char, int)'
+ byte bitVal(char b, int n);
+      ^
+BitInputStream.cpp:31:5: error: extra qualification 'BitInputStream::' on member 'readBit' [-fpermissive]
+ int BitInputStream::readBit()
+     ^
+BitInputStream.cpp:31:5: error: 'int BitInputStream::readBit()' cannot be overloaded
+In file included from BitInputStream.cpp:1:0:
+BitInputStream.hpp:45:5: error: with 'int BitInputStream::readBit()'
+ int readBit();
+     ^
+BitInputStream.cpp:48:1: error: expected '}' at end of input
+ }
+ ^
+BitInputStream.cpp:48:1: error: expected unqualified-id at end of input
+make: *** [BitInputStream.o] Error 1
